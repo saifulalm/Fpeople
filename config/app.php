@@ -168,6 +168,7 @@ return [
 	Backpack\Settings\SettingsServiceProvider::class,
 	Cviebrock\EloquentSluggable\ServiceProvider::class, 
 	Backpack\PageManager\PageManagerServiceProvider::class,
+	Backpack\NewsCRUD\NewsCRUDServiceProvider::class,
         /*
          * Package Service Providers...
          */

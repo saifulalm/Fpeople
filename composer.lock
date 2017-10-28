@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e7cd77f746dc677809b361eb64e0d58",
+    "content-hash": "2bd6f6e3183d995e3cd75f4b91524b5e",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -256,6 +256,60 @@
                 "updivision"
             ],
             "time": "2017-08-30T18:52:39+00:00"
+        },
+        {
+            "name": "backpack/newscrud",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/NewsCRUD.git",
+                "reference": "94d2d92cf9c84b09bf5e2e0d8e9e3dc7c0966d78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/NewsCRUD/zipball/94d2d92cf9c84b09bf5e2e0d8e9e3dc7c0966d78",
+                "reference": "94d2d92cf9c84b09bf5e2e0d8e9e3dc7c0966d78",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^3.0.6",
+                "cviebrock/eloquent-sluggable": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\NewsCRUD\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://tabacitu.ro",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An admin panel for news with categories and tags, using Backpack\\CRUD on Laravel 5.",
+            "homepage": "https://github.com/backpack/NewsCRUD",
+            "keywords": [
+                "NewsCRUD",
+                "backpack"
+            ],
+            "time": "2017-07-06T05:21:47+00:00"
         },
         {
             "name": "backpack/pagemanager",

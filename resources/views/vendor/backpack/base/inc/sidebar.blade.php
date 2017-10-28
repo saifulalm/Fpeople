@@ -23,16 +23,28 @@
           <!-- ================================================dashboard===== -->
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
 	
-	  <!-- ================================================Setting============== -->
+	  <!-- ================================================Setting============================================================================================== -->
 	  <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/setting') }}"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
-          <!-- ======================================= -->
-	  <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/language') }}"><i class="fa fa-flag-o"></i> <span>Languages</span></a></li>
+          <!-- ========================================================LANGUANGE =================================================================================== -->
+	  <li class="treeview">
+	  <a href="#"><i class="fa fa-newspaper-o"></i> <span>Languange</span> <i class="fa fa-angle-left pull-right"></i></a>
+	  <ul class="treeview-menu">
+	  <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/language') }}"><i class="fa fa-flag-o"></i> <span>Languages</span></li></a>
 	  <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/language/texts') }}"><i class="fa fa-language"></i> <span>Language Files</span></a></li>
-	  <!-- ======PageManager -->
+	  </ul>
+	  </li>
+	  <!-- =================================================PageManager========================================================================================= -->
 	  <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i> <span>Pages</span></a></li>
-
-		
-
+	  <!-- ================================================News CRUD============================================================================================ -->
+	  <li class="treeview">
+    	  <a href="#"><i class="fa fa-newspaper-o"></i> <span>News</span> <i class="fa fa-angle-left pull-right"></i></a>
+    	  <ul class="treeview-menu">
+      	  <li><a href="{{ url('admin/article') }}"><i class="fa fa-newspaper-o"></i> <span>Articles</span></a></li>
+      	  <li><a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span>Categories</span></a></li>
+       	  <li><a href="{{ url('admin/tag') }}"><i class="fa fa-tag"></i> <span>Tags</span></a></li>
+    	  </ul>
+	  </li>
+	  <!-- ==================================================================================================================================================== -->
 	         <li class="header">{{ trans('backpack::base.user') }}</li>
           	<li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/logout') }}"><i class="fa fa-sign-out"></i> <span>{{ trans('backpack::base.logout') }}</span></a></li>
         	</ul>
